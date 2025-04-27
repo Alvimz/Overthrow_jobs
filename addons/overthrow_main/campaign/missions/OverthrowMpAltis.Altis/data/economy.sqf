@@ -9,6 +9,7 @@ OT_economicData = [
     [[17139.3,13050.5,0],"Pyrgos Vineyard","","OT_Grapes"],
     [[18123.6,13022.5,0],"Olive Plantation","","OT_Olives"],
     [[14305.6,18883.7,0],"Athira Wines","OT_Grapes","OT_Wine"]
+    
 ];
 OT_factoryPos = [6201.09,16257.1,0];
 OT_factoryVehicleSpawn = [6183.15,16269.7,0];

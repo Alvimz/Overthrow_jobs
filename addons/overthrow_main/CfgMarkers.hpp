@@ -153,4 +153,13 @@ class CfgMarkers
 		shadow = 1;
 		scope = 1;
 	};
+	class banana_field
+	{
+		name= "Banana Field";
+		icon= "\overthrow_main\ui\markers\hbanana_field.paa";
+		color[] = {1, 1, 1, 1};
+		size = 30;
+		shadow = 0;
+		scope = 2;
+	};
 };

@@ -2,6 +2,15 @@ class CfgFunctions
 {
 	class OT
 	{
+		class Farms
+		{
+			file = "\overthrow_main\functions";
+			class initFarms
+			{
+				postInit = 1;
+			};
+		};
+
 		class Base
 		{
 			file = "\overthrow_main\functions";
