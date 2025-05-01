@@ -8,7 +8,7 @@ class EditorData
 	toggles=514;
 	class ItemIDProvider
 	{
-		nextID=2310;
+		nextID=2312;
 	};
 	class MarkerIDProvider
 	{
@@ -16,11 +16,11 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=510;
+		nextID=522;
 	};
 	class Camera
 	{
-		pos[]={10312.414,73.0933,21850.43};
+		pos[]={10314.908,70.569649,21852.617};
 		dir[]={0.8812114,-0.45936823,-0.1115684};
 		up[]={0.45573023,0.88824594,-0.057699088};
 		aside[]={-0.12560531,-3.7252903e-09,-0.99208045};
@@ -8756,12 +8756,13 @@ class Mission
 					class PositionInfo
 					{
 						position[]={10322.473,67.55899,21849.758};
-						angles[]={0.086450629,0,0.063912325};
+						angles[]={0.086446159,0,0.063913956};
 					};
 					side="Empty";
 					flags=4;
 					class Attributes
 					{
+						disableSimulation=1;
 					};
 					id=2299;
 					type="Land_CratesPlastic_F";
@@ -8772,12 +8773,13 @@ class Mission
 					class PositionInfo
 					{
 						position[]={10323.896,67.546371,21856.125};
-						angles[]={6.1650901,4.5775418,0.1946191};
+						angles[]={6.1650963,4.5775447,0.19462167};
 					};
 					side="Empty";
 					flags=4;
 					class Attributes
 					{
+						disableSimulation=1;
 					};
 					id=2300;
 					type="Land_CratesShabby_F";
@@ -8794,8 +8796,9 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="this addAction [" \n "    ""Collect banana!"", " \n "    {" \n "        params [""_target"", ""_caller"", ""_actionId"", ""_arguments""];" \n "" \n "        [_caller, ""KNEEL_TREAT2"", ""AR""] call BIS_fnc_ambientAnim;" \n "        sleep 4;" \n "        _caller call BIS_fnc_ambientAnim__terminate;" \n "" \n "        [_caller, ""ACE_Banana"", """", 1] call ace_common_fnc_addToInventory;" \n "        hint ""Made it!"";" \n "    }" \n "];" \n "";
+						init="this addAction [  " \n "    ""Collect banana!"",  " \n "    ""scripts\banana_collect.sqf"" " \n "]; " \n " " \n "this setVariable [""ace_dragging_canCarry"", false, true]; " \n "this setVariable [""ace_dragging_canDrag"",  false, true]; " \n "";
 						name="cest";
+						disableSimulation=1;
 					};
 					id=2301;
 					type="Land_Basket_F";
